@@ -5,3 +5,70 @@ body {
     font-family: "Space Mono";
 }
 
+.inputBillPeople {
+    background-color: hsl(189, 41%, 97%);
+}
+
+
+.box {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Overall right side */
+/* make the right box width auto and to fit to half of the box */
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    background-color: hsl(183, 100%, 15%)
+}
+
+.rightTitles {
+    color: white;
+    font-size: 24px;
+}
+
+.perPerson {
+    color: hsl(184, 14%, 56%);
+    font-size: 18px;
+}
+/* align money to the right side*/
+
+/* Tip amount */
+.tipAmount {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.tipAmountTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Total amount */
+.total {
+    display: flex;
+    flex-direction: row;
+}
+
+.totalTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.totalMoney {
+    font-size: 50px;
+    color: hsl(172, 67%, 45%);
+    font-weight: 700;
+    margin-left: auto; 
+    margin-right: 0;
+    padding-right: 20px;
+}
