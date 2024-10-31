@@ -7,16 +7,36 @@ body {
 
 .inputBillPeople {
     background-color: hsl(189, 41%, 97%);
+    border-style: none;
+    text-align: end;
+    font-family: "Space Mono";
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: space-around;
+    padding-right: 3%;
+    
 }
 
+.inputBillPeople::placeholder {
+    color: hsl(184, 14%, 56%);
+
+}
+
+/* make the border red 
+.inputBillPeople[type=text]:focus {
+
+}
+*/
 
 .box {
     background-color: white;
     display: flex;
-    flex-direction: row;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
-    margin: 20px;
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 /* Overall right side */
@@ -24,20 +44,30 @@ body {
 .right {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: auto;
     border-radius: 25px;
-    background-color: hsl(183, 100%, 15%)
+    background-color: hsl(183, 100%, 15%);
+    margin: 0 auto;
 }
 
 .rightTitles {
     color: white;
-    font-size: 24px;
+    font-size: 15px;
+    margin-top: 65%;
+    margin-left: 70%;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: nowrap;
+    margin: -15%;
+    padding: 0;
 }
 
 .perPerson {
     color: hsl(184, 14%, 56%);
-    font-size: 18px;
+    font-size: 13px;
+    margin-left: -15%;
 }
 /* align money to the right side*/
 
@@ -45,23 +75,31 @@ body {
 .tipAmount {
     display: flex;
     flex-direction: row;
+
     
 }
 
 .tipAmountTitle {
     display: flex;
     flex-direction: column;
+    margin-left: 8%;
+    margin-top: 15%;
 }
+
 
 /* Total amount */
 .total {
     display: flex;
     flex-direction: row;
+    margin-top: -18%;
+    padding-top: 0;
 }
 
 .totalTitle {
     display: flex;
     flex-direction: column;
+    margin-left: 8%;
+    margin-top: 15%;
 }
 
 .totalMoney {
@@ -71,4 +109,94 @@ body {
     margin-left: auto; 
     margin-right: 0;
     padding-right: 20px;
+    padding-left: -40px;
 }
+
+.tip-percent > button {
+    border-radius: 5px;
+    font-family: "Space Mono";
+    background-color: hsl(183, 100%, 15%);
+    border-style: none;
+    color: white;
+    font-size: 24px;
+    height: 40px;
+    width: 30%;
+    margin: 5px;
+    font-weight: 300;
+
+}
+
+.tip-percent > input{
+    border-radius: 5px;
+    font-family: "Space Mono";
+    border-style: none;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    height: 40px;
+    width: 30%;
+    margin: 5px;
+    background-color: hsl(189, 41%, 97%);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.tip {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tip-percent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.billName {
+   color: hsl(186, 14%, 43%);
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.selectTip {
+    color: hsl(186, 14%, 43%);
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.numberPeople {
+    color: hsl(186, 14%, 43%);
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 10%;
+
+}
+
+.reset {
+    border-radius: 5px;
+    font-family: "Space Mono";
+    background-color: hsl(172, 76%, 20%);
+    border-style: none;
+    color: hsl(183, 100%, 15%);
+    font-size: 15px;
+    height: 40px;
+    width: 75%;
+
+    font-weight: bold;
+    margin-top: 18%;
+    margin-bottom: 10%;
+    margin-left: 12.5%;
+}
+
