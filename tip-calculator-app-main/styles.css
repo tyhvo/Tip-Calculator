@@ -39,6 +39,10 @@ body {
 }
 */
 
+.left {
+    width: 50%;
+}
+
 .box {
     background-color: white;
     display: flex;
@@ -54,7 +58,7 @@ body {
 .right {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 50%;
     height: auto;
     border-radius: 25px;
     background-color: hsl(183, 100%, 15%);
@@ -210,3 +214,7 @@ body {
     margin-left: 12.5%;
 }
 
+.reset:hover {
+    background-color: hsl(172, 45%, 64%);
+    color: hsl(183, 100%, 15%);
+}
