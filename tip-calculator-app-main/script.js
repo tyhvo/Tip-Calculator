@@ -3,9 +3,9 @@ const billInput = document.querySelector(".bill input");
 const tipButtons = document.querySelectorAll(".tip-percent button");
 const customTipInput = document.querySelector(".tip-percent input");
 const peopleInput = document.querySelector(".people input");
-const tipAmountDisplay = document.querySelector(".tipAmount .totalMoney #displayMoney");
-const totalAmountDisplay = document.querySelector(".total .totalMoney #displayMoney");
-const resetButton = document.querySelector(".displayTipAmount button");
+const tipAmountDisplay = document.querySelector(".tip-amount .total-money #display-money");
+const totalAmountDisplay = document.querySelector(".total .total-money #display-money");
+const resetButton = document.querySelector(".display-tip-amount button");
 
 // function to calculate and update tip amount and total per person
 function calculateTip() {
@@ -69,4 +69,15 @@ resetButton.addEventListener("click", () => {
   tipButtons.forEach(btn => btn.classList.remove("active"));
   tipAmountDisplay.textContent = "$0.00";
   totalAmountDisplay.textContent = "$0.00";
+});
+
+// event listener for when the tip buttons are clicked and if they are active
+tipButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    if (button.classList.contains("active")) {
+      button.classList.remove("active");
+    } else {
+      button.classList.add("active");
+    }
+  });
 });

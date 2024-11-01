@@ -5,7 +5,7 @@ body {
     font-family: "Space Mono";
 }
 
-.inputBillPeople {
+.input-bill-people {
     background-color: hsl(189, 41%, 97%);
     border-style: none;
     text-align: end;
@@ -18,17 +18,17 @@ body {
     
 }
 
-.tipButton:hover { 
+.tip-button:hover { 
     background-color: hsl(172, 45%, 64%);
     color: hsl(183, 100%, 15%);
 }
 
-.tupButton:active {
+.tip-button:active {
     background-color: hsl(172, 67%, 45%);
 
 }
 
-.inputBillPeople::placeholder {
+.input-bill-people::placeholder {
     color: hsl(184, 14%, 56%);
 
 }
@@ -65,7 +65,7 @@ body {
     margin: 0 auto;
 }
 
-.rightTitles {
+.right-titles {
     color: white;
     font-size: 15px;
     margin-top: 65%;
@@ -78,7 +78,7 @@ body {
     padding: 0;
 }
 
-.perPerson {
+.per-person {
     color: hsl(184, 14%, 56%);
     font-size: 13px;
     margin-left: -15%;
@@ -86,14 +86,14 @@ body {
 /* align money to the right side*/
 
 /* Tip amount */
-.tipAmount {
+.tip-amount {
     display: flex;
     flex-direction: row;
 
     
 }
 
-.tipAmountTitle {
+.tip-amount-title {
     display: flex;
     flex-direction: column;
     margin-left: 8%;
@@ -109,14 +109,14 @@ body {
     padding-top: 0;
 }
 
-.totalTitle {
+.total-title {
     display: flex;
     flex-direction: column;
     margin-left: 8%;
     margin-top: 15%;
 }
 
-.totalMoney {
+.total-money {
     font-size: 50px;
     color: hsl(172, 67%, 45%);
     font-weight: 700;
@@ -177,20 +177,20 @@ body {
     margin-bottom: 4%;
 }
 
-.billName {
+.bill-name {
    color: hsl(186, 14%, 43%);
     font-size: 15px;
     margin-left: 5%;
 }
 
-.selectTip {
+.select-tip {
     color: hsl(186, 14%, 43%);
     font-size: 15px;
     margin-left: 5%;
     margin-top: 10%;
 }
 
-.numberPeople {
+.number-people {
     color: hsl(186, 14%, 43%);
     font-size: 15px;
     margin-left: 5%;
