@@ -5,7 +5,7 @@ body {
     font-family: "Space Mono";
 }
 
-.input-bill-people {
+.input-bill {
     background-color: hsl(189, 41%, 97%);
     border-style: none;
     text-align: end;
@@ -15,12 +15,46 @@ body {
     font-weight: 700;
     justify-content: space-around;
     padding-right: 3%;
-    
+    background-image: url('images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    margin-left: 24px;
 }
+
+.input-people {
+    background-color: hsl(189, 41%, 97%);
+    border-style: none;
+    text-align: end;
+    font-family: "Space Mono";
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: space-around;
+    padding-right: 3%;
+    background-image: url('images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    margin-left: 24px;
+}
+
+.input-people:focus {
+    outline: none;
+    border: 3px solid hsl(172, 67%, 45%);
+    border-radius: 5px;
+}
+
+.input-bill:focus {
+    outline: none;
+    border: 3px solid hsl(172, 67%, 45%);
+    border-radius: 5px;
+}
+
 
 .tip-button:hover { 
     background-color: hsl(172, 45%, 64%);
     color: hsl(183, 100%, 15%);
+    font-weight: bold;
+
 }
 
 .tip-button:active {
@@ -28,16 +62,23 @@ body {
 
 }
 
-.input-bill-people::placeholder {
+.tip-button:focus {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+
+.input-bill::placeholder {
     color: hsl(184, 14%, 56%);
 
 }
 
-/* make the border red 
-.inputBillPeople[type=text]:focus {
+.input-people::placeholder {
+    color: hsl(184, 14%, 56%);
 
 }
-*/
+
+
 
 .left {
     width: 50%;
@@ -150,10 +191,19 @@ body {
     width: 30%;
     margin: 5px;
     background-color: hsl(189, 41%, 97%);
-    text-align: center;
+    text-align: end;
     font-weight: bold;
 }
 
+.tip-percent > input::placeholder {
+    text-align: center;
+}
+
+.tip-percent > input:focus {
+    outline: none;
+    border: 3px solid hsl(172, 67%, 45%);
+    border-radius: 5px;
+}
 
 
 .tip {
@@ -215,6 +265,8 @@ body {
 }
 
 .reset:hover {
-    background-color: hsl(172, 45%, 64%);
+    background-color: hsl(172, 67%, 45%) ;
     color: hsl(183, 100%, 15%);
+    font-weight: bold;
 }
+
