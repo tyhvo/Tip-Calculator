@@ -264,9 +264,33 @@ body {
     margin-left: 12.5%;
 }
 
-.reset:hover {
-    background-color: hsl(172, 67%, 45%) ;
+.reset-active {
+    background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
     font-weight: bold;
 }
+
+.people-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-error {
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+/* CSS for the error message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: none; /* Hidden by default */
+}
+
+.input-error:focus {
+    outline-color: red;
+}
+
 

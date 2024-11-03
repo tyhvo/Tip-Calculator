@@ -40,8 +40,11 @@
         </div>
       </div>
       <div class="people">
-        <h2 class="number-people">Number of People</h2>
-        <input class = 'input-people' type="text" placeholder="0">
+        <div class = 'people-title'>
+          <h2 class="number-people">Number of People</h2>
+          <div id="error-message" class="error-message">Can't be zero</div>
+        </div>
+        <input class = 'input-people' id="people-input" type="text" placeholder="0">
       </div>
     </div>
     <div class="right">
@@ -64,7 +67,7 @@
             <p id="display-money">$0.00</p>
           </div>
         </div>
-        <button class="reset">RESET</button>
+        <button class="reset" id="reset-button">RESET</button>
       </div>
     </div>
   </div>

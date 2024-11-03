@@ -2,10 +2,11 @@
 const billInput = document.querySelector(".bill input");
 const tipButtons = document.querySelectorAll(".tip-percent button");
 const customTipInput = document.querySelector(".tip-percent input");
-const peopleInput = document.querySelector(".people input");
+const peopleInput = document.getElementById('people-input');
 const tipAmountDisplay = document.querySelector(".tip-amount .total-money #display-money");
 const totalAmountDisplay = document.querySelector(".total .total-money #display-money");
 const resetButton = document.querySelector(".display-tip-amount button");
+const errorMessage = document.getElementById('error-message');
 
 // function to calculate and update tip amount and total per person
 function calculateTip() {
@@ -81,3 +82,32 @@ tipButtons.forEach(button => {
     }
   });
 });
+
+// event listener to check if the input people is valid
+
+peopleInput.addEventListener('input', () => {
+  const inputValue = parseInt(peopleInput.value, 10);
+  
+  if (inputValue === 0) {
+      // Show error message and apply error style
+      errorMessage.style.display = 'block';
+      peopleInput.classList.add('input-error');
+  } else {
+      // Hide error message and remove error style when input is valid
+      errorMessage.style.display = 'none';
+      peopleInput.classList.remove('input-error');
+  }
+});
+
+  // Function to check if any input has a value
+  function checkInputs() {
+    if (billInput.value || peopleInput.value) {
+        resetButton.classList.add('reset-active');
+    } else {
+        resetButton.classList.remove('reset-active');
+    }
+  }
+
+  // Add event listeners to check for changes in each input
+  billInput.addEventListener('input', checkInputs);
+  peopleInput.addEventListener('input', checkInputs);
